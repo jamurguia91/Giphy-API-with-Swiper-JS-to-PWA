@@ -1,0 +1,19 @@
+/* reset */
+html, body {
+  margin: 0;
+}
+
+/* Swiper Slide Wrapper
+* full height of window
+*/
+.swiper-slide {
+  background: #000;
+  height: 100vh;
+}
+
+/* Swiper Slide Content
+* fill entire width of container
+*/
+.swiper-slide img {
+  width: 100%;
+} 
