@@ -1,12 +1,17 @@
 // initialize Swiper
-const swiper = new Swiper(".swiper", {});
+const swiper = new Swiper(".swiper", {
+  loop: true,
+  effect: 'coverflow',
+  centeredSlides: true,
+  slidesPerView: '3',
+});
 
 // VARIABLES
 // API Key
-const API_KEY = 'vRgpxNRNKxyIlc1sk9lEifd6kDJZDK57';
+const API_KEY = 'PeHq7nutMojzQ3zpHHf9eTtroz6ivN2j';
 
 // Go fetch Giphy API data
-    fetch(`https://api.giphy.com/v1/gifs/trending?api_key=${API_KEY}&limit=50`)
+    fetch(`https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&q=kermit&limit=25&rating=pg`)
       .then( response => response.json() )
       .then( gifs => {
       
